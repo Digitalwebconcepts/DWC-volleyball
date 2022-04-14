@@ -1417,12 +1417,17 @@ footer .social-list li {
     font-size: 14px;
 }
 
-.footer-item {
-    padding-top: 7px;
+@media (min-width:576px) and (max-width:767px) {
+    .footer-item {
+        padding-top: 7px;
+    }
 }
 
 .footer-item h3 {
     margin-bottom: 19px;
+    color: #ebfc02;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .footer-link li {
@@ -1496,8 +1501,9 @@ footer .social-list li {
 
 .footer-menu {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 10px;
 }
 
 .footer-menu li {
@@ -1518,6 +1524,8 @@ footer .social-list li {
     font-size: 14px;
     line-height: 18px;
     display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 /* ------------------ FOOTER-FITNESS ------------------ */
@@ -1588,12 +1596,14 @@ footer .social-list li {
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width:576px) and (max-width:992px) {
     .footer-item-logo,
     .footer-item {
         margin-bottom: 50px;
     }
+}
 
+@media (max-width: 991px) {
     .footer-bottom {
         margin-top: 0;
     }
@@ -1739,7 +1749,8 @@ footer .social-list li {
 /* --------------------- SOCIAL LIST --------------------- */
 .social-list {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
 }
 
 .social-list li {
@@ -4694,7 +4705,7 @@ body {
 #clockdiv .clock-item span {
     display: block;
     font-size: 96px;
-    color: #f23849;
+    color: #ff4c00;
     line-height: .75;
     margin-bottom: 10px;
     text-align: center;
@@ -7118,5 +7129,30 @@ body {
 @media (max-width:380px) {
     ul.contact-item-list {
         font-size: 12px;
+    }
+}
+
+@media (min-width:576px) and (max-width:992px) {
+    .footer-item.footer-item-list {
+        display: none;
+    }
+}
+
+@media (max-width:575px) {
+    .footer-item.footer-item-list {
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width:767px) {
+    .social-list {
+        padding-bottom: 20px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width:575px) {
+    .footer-menu {
+        justify-content: flex-start;
     }
 }
