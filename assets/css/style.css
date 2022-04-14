@@ -4697,10 +4697,12 @@ body {
     color: #f23849;
     line-height: .75;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #clockdiv .clock-item .smalltext {
     font-size: 24px;
+    text-align: center;
 }
 
 /* ---------------- S-WELCOME-FITNESS ---------------- */
@@ -5506,6 +5508,7 @@ body {
 
     #clockdiv .clock-item .smalltext {
         font-size: 22px;
+        text-align: center;
     }
 
     .crossfit-icon-2 {
